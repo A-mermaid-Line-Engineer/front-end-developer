@@ -26,24 +26,9 @@ $(document).ready(function(){
 	 	});
 
 	 	//点击添加红色背景
-	 	$(".part_1").click(function(){
-	 		$(this).addClass("current").siblings().removeClass("current")
-	 	})
-	 	$(".part_2").click(function(){
-	 		$(this).addClass("current").siblings().removeClass("current")
-	 	})
-	 	$(".part_3").click(function(){
-	 		$(this).addClass("current").siblings().removeClass("current")
-	 	})
-	 	$(".part_4").click(function(){
-	 		$(this).addClass("current").siblings().removeClass("current")
-	 	})
-	 	$(".part_5").click(function(){
-	 		$(this).addClass("current").siblings().removeClass("current")
-	 	})
-	 	$(".part_6").click(function(){
-	 		$(this).addClass("current").siblings().removeClass("current")
-	 	})
+	 		$(".navbox li").click(function(){
+	$(this).addClass("current").siblings("li").removeClass("current");
+})
 
 	 	//点击windows滑动动画
 		$(".part_2").on("click",function(){
