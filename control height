@@ -1,0 +1,85 @@
+#html
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+
+	<script type="text/javascript">
+$(function(){
+	$("#loadmore").on("click",function(){
+		var height = $(".main").height()
+		$(".main").css("height","+=320px");
+		if (height >= 1280) {
+		$("#loadmore").css("display","none");
+	}
+
+	});
+})
+	</script>
+</head>
+
+<body>
+	<div class="main" style="height:320px;">
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+	</div>
+		<div><a id="loadmore" style="
+    display: block;"></a></div>
+		<p>zhanweizhi</p>
+		<p>zhanweizhi</p>
+		<p>zhanweizhi</p>
+		<p>zhanweizhi</p>
+		<p>zhanweizhi</p>
+		<p>zhanweizhi</p>
+		<p>zhanweizhi</p>
+		<p>zhanweizhi</p>
+		<p>zhanweizhi</p>
+		<p>zhanweizhi</p>
+</body>
+</html>
+
+#css
+.main{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.div{
+	width: 300px;
+	height: 300px;
+	margin:10px 15px;
+	float: left;
+	background: #ccc;
+}
+#loadmore{
+	background: url(go_more.gif) no-repeat center top;
+    width: 162px;
+    line-height: 62px;
+    height: 65px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    bottom: 0;
+    color: #ff2020;
+    cursor: pointer;
+    font-size: 16px;
+    backguound-color:red;
+}
+p{
+	text-align: center;
+}
