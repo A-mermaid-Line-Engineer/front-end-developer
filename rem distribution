@@ -1,0 +1,14 @@
+//Dynamic calculation rem
+
+var updateOrientation = function(){
+				var orientation = (window.innerWidth > window.innerHeight) ? 'landscape' : 'portrait';
+				if(orientation === "portrait"){
+					var devWidth = document.documentElement.clientWidth > 640 ? 640 : document.documentElement.clientWidth;
+					document.documentElement.style.fontSize = 20 * devWidth/320 + "px";
+				}
+				else{
+					var devHeight = document.documentElement.clientHeight > 640 ? 640 : document.documentElement.clientHeight;
+					document.documentElement.style.fontSize = 20 * devHeight/320 + "px";
+				}
+			};
+			updateOrientation();
